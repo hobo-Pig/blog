@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow: hidden; height: 100%;">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8"><!--设置编码-->
+	<meta name="author" content="hobo.com">
+    <meta name="keywords" content="web前端，web前端个人简历，前端开发">
+    <meta name="description" content="郭育添的web前端工程师个人简历">
+	<title>web前端工程师简历</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/jquery.fullPage.css">
+	<link rel="stylesheet" href="css/index.css">
+	<style type="text/css">
+		
+	</style>
+</head>
+<body style="overflow: hidden; height: 100%;">
+<!-- 		<div id="clock" style="opacity: 1;transform:translate(0px,0px)">
+		<div id="hourhand" style="height: 28px;
+    margin-top: -28px;transition: transform 1200ms cubic-bezier(0.39, 0.575, 0.565, 1) 500ms; transform: rotate(600deg);"></div>
+		<div id="minutehand" style="height: 36px;
+    margin-top: -36px;transition: transform 1300ms cubic-bezier(0.39, 0.575, 0.565, 1) 500ms; transform: rotate(678deg);"></div>
+			<div class="centerdot"></div>
+		</div> -->
+		<div id="header" style="opacity:.3;min-height:60px;"></div>
+		<header style="opacity:1;">
+				<div id="logo">
+					<div id="header_img" style="float:left;width:50px;height:50px;border-radius:50px;width:">
+						<img src="images/header-code.png" style="width:100%;height:100%;">
+					</div>
+					<div id="header_p" >
+						<p id="header_p1" >hobo</p>
+						<p id="header_p2">个人简历</p>
+					</div>
+				</div>
+				<ul class="navbar">
+					<li><a href="">首页</a></li>
+					<li><a href="">随笔</a></li>
+					<li><a href="">积淀</a></li>
+					<li><a href="">关于</a></li>
+				</ul>
+				<button type="button" class="navbar-toggle">
+				        <span class="sr-only">导航</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+		      </button>
+	</header>
+	<div id="dowebok">
+	    <div id="home_content" class="section" style="display:none;">
+	        	<div id="home_title" style="text-align:center;margin-top:75px">
+		        	<img src="images/psb.jpg" style="width:256px;height:144px;">
+		        	<div style="margin:50px auto 30px;width:450px;">生活不知眼前苟且，须知不忘努力，不断上升，突破自我。</div>
+		        </div>
+		        <ul id='home_info_box' style="border-top:2px solid #ccc;width: 0;margin:15px auto;">
+		        	<div  class="home_info_li">我叫郭育添</div>
+		        	<div  class="home_info_li">25岁</div>
+		        	<div  class="home_info_li">一名热爱前端工作的工程师</div>
+		        	<div  class="home_info_li">15117949915@163.com</div>
+		        </ul>
+        </div>
+	    <div id="about_content" class="section" style="height: 510px;">
+	    		<div class="title">
+	    			<h1>关于我</h1>
+    			</div>
+    			<div id="about_list_content" style="border-radius:30px;width:800px;background:rgba(33,127,243,0.72);margin:20px auto;">
+    				<div class="about_list_item">
+    					<div class="about_list_eg">
+    						<img src="images/education.png" alt="">
+    					</div>
+    					<div style="margin:20px auto;width: 100px;line-height: 25px;position: relative;color: #fff;">
+    						学历
+    						<p style="text-align:right;">本科</p>
+    					</div>
+    				</div>
+    				<div class="about_list_item">
+						<div class="about_list_eg">
+    						<img src="images/age.png" alt="">
+    					</div>
+	    					<div style="margin:20px auto;width: 100px;line-height: 25px;position: relative;color: #fff;">
+    						年龄
+    						<p style="text-align:right;">25</p>
+    					</div>
+    				</div>
+    				<div class="about_list_item">
+						<div class="about_list_eg">
+    						<img src="images/location.png" alt="">
+    					</div>    					
+    					<div style="margin:20px auto;width: 100px;line-height: 25px;position: relative;color: #fff;">
+    						坐标
+    						<p style="text-align:right;">深圳</p>
+    					</div>    						
+
+    				</div>
+    				<div class="about_list_item">
+    					<div class="about_list_eg">
+    						<img src="images/work.png" alt="" style="width:50px;height:50px;margin:15px;">
+    					</div>
+    					<div style="margin:20px auto;width: 100px;line-height: 25px;position: relative;color: #fff;">
+    						状态
+    						<p style="text-align:right;">离职</p>
+    					</div>
+    				</div>
+    			</div>
+    			<div id="about_info">
+    				<p>2014年毕业于北京化工大学信息科学与技术学院</p>
+    				<p>喜欢优雅的代码，代码强迫症患者</p>
+    				<p>AngularJs ReactJs</p>
+    				<p>层出不穷的框架让人兴奋，而不同框架背后的思路却在逐渐统一</p>
+    			</div>
+	    </div>
+	     <div id="skill_content" class="section">
+				<div class="title">
+	    			<h1>专业技能</h1>
+    			</div>
+    			<div >
+    				<p id="skill_info" style="width:600px;margin:30px auto;text-align:center;">前端的学习需要持之以恒，知识深度与广度都很重要,不过我认为需要先精后广，一专多长。前端开发需要掌握基础的HTML、CSS、javascript之后，重中之重就是原生javascript的理解，必需有模块化，组件化，工程化思想。广而学习性能优化，SEO，框架，响应式页面等细节方面。</p>
+					<div id="skill_list" style="padding-top:15px;">
+						<div class="skill_item">
+							<div class="skill_name">
+		    						<img src="images/icon-html.png" alt="">
+							</div>
+							<ul class="skill_ifo">
+								<li>深刻理解Web标准</li>
+								<li>熟练运用html标签</li>
+								<li>掌握html5如SVG，localstorage新特性</li>
+							</ul>
+						</div>
+						<div class="skill_item">
+							<div class="skill_name">
+		    						<img src="images/icon-css.png" alt="">
+							</div>
+							<ul class="skill_ifo">
+								<li>熟练运用css及css3新属性</li>
+								<li>注重浏览器兼容性，熟悉常见的css hack（兼容至IE8）</li>
+								<li>掌握bootstrap框架及源码的实现</li>
+								<li>掌握css预编译器Less及Sass</li>
+							</ul>
+						</div>
+						<div class="skill_item">
+							<div class="skill_name">
+	    						<img src="images/icon-js.png" alt="">
+							</div>							
+							<ul class="skill_ifo">
+								<li>掌握jQuery</li>
+								<li>掌握原生JS的编程</li>
+								<li>注重JavaScript性能优化</li>
+								<li>正在学习ES6</li>
+							</ul>							
+						</div>
+						<div class="skill_item">
+							<div class="skill_name">
+		    						<img src="images/icon-nodejs.png" alt="">
+							</div>
+						</div>
+					</div>	
+    			</div>
+		</div>
+	    <div id="exp_content" class="section">
+				<div class="title">
+	    			<h1>工作经历</h1>
+    			</div>
+    			<div id="exp_slider" style="padding-bottom:15px;" style="position:relative;">
+    				<div id="exp_slider_content" style="position:relative;">
+	    				<div class="arrow-left"></div>
+    					<ul id="exp_list" >
+							<li>
+								<dl>
+									<dt>东莞天宇网络技术有限公司</dt>
+									<dd>2014/05 -- 2014/09</dd>
+									<dd>基于微信平台的网页开发，项目包括：微信官网，微信客服，微信商城，与微信活动等功能。 </dd>
+									<dd>基于php后台开发的，微信小游戏，微信网页模版做一些定制和兼容性处理。</dd>
+									<dd>工作之余开始系统性的自学web前端各项技术</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>正益移动互联科技股份有限公司</dt>
+									<dd>2014/09 -- 至今</dd>
+									<dd>项目一：中国联合航空APP  (2014-09中旬-2014-11中旬) </dd>
+									<dd>在appcan平台上运用IDE开发工具，使用前端html+css+javascript快速完成App跨平台(IOS和andriod)开发。</dd>
+									<dd>负责移动端UI界面的还原，以及前端使用ajax与后端进行业务对接的展现和逻辑处理。</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>正益移动互联科技股份有限公司</dt>
+									<dd>2014/09 -- 至今</dd>
+									<dd>项目二：南方基金APP (2014-12-至今) </dd>
+									<dd>一期研发负责跟进项目前期需求调研，详细需求统计分析，到实施运维，人力安排，项目进度把控，协调人员对项目支持，后期负责整个项目维护并负责整个移动端wap的开发和微信公众号业务的整合。</dd>
+									<dd>收获:对前端知识有进一步认识，抛开具体业务，开始关注模块化，组件化，工程化思想。在熟练使用jQuery基础上，加深对原生javascript理解，接触预编译处理，前端构建工具等待。</dd>
+								</dl>
+							</li>
+						</ul>
+	    				<div class="arrow-right"></div>
+    				</div>
+    			</div>
+				</div>
+		<div id="portfolio_content" class="section">
+				<div class="title">
+	    			<h1>作品集</h1>
+    			</div>	    
+		</div>
+		 <div id="contact_content" class="section" style="position:relative;">
+				<div class="title">
+	    			<h1>联系我</h1>
+    			</div>
+    			<div style="text-align:center;margin-top:30px;">
+    				<p style="font-size:30px;">I BELIEVE</p>
+					<p id="contact_believe_en" style="font-size:30px;">
+    					<span>DONE</span>
+    					<span>IS</span>
+    					<span>BETTER</span>
+    					<span>THAN</span>
+    					<span>PERFECT</span>
+    				    .</p>
+    				<div  style="line-height:24px;font-size:14px;width:100%;height:200px;margin-top:15px;">
+    					<p  id="contact_code" style="display:none;">
+	    						学习是一个充实愉悦的过程<br/>
+							前端更贴近用户，这种体验非常美妙<br/>
+							热爱前端，也热爱一切美好的事物<br/>
+							行路有良友，便是捷径<br/>
+							世界这么大，带上我吧，我们一起去探索<br/>
+    					</p>
+    				</div>
+    				<footer >
+							<div class="footer"><a href="http://www.cnblogs.com/hoboStage/">博客</a>|<a href="#" >知乎</a>|<a href="https://github.com/hobocsdn">Github</a></div>
+							<div class="footer ">All Rights Reserved&nbsp;</div>
+							<div class="footer ">Copyright © 2016 - 2017</div>
+					</footer>
+    			</div>
+
+		</div>
+	    
+	</div>
+</body>
+<script src="js/jquery.min.js"></script>
+<!-- <script src="js/jquery-ui.min.js"></script>
+ --><script src="js/jquery.fullPage.js"></script>
+<script>
+	$(document).ready(function(){
+		$('.skill_item .skill_name').on('click',function(){
+			$(".skill_ifo").each(function(){
+				if($(this).is(":visible")){
+					$(this).slideUp(200);
+					$('.skill_item').removeClass('selected')
+				}
+			});
+			if($(this).siblings(".skill_ifo").is(":hidden")){
+				$(this).siblings(".skill_ifo").slideDown(400);
+				$(this).parent().addClass('selected')
+			}else{
+				$(this).siblings(".skill_ifo").slideUp(200);
+				$(this).parent().removeClass('selected')
+			}
+		})
+		var page = 1;
+		$('.arrow-left').on('click',function(){
+				if(!$("#exp_list").is(":animated")){
+					if(page==1){
+						$("#exp_list").animate({left:"+=50"},200,function(){
+							$(this).animate({left:"-=50"},200);
+						});
+						return false;
+					}	
+					$("#exp_list").animate({left:"+="+$("#exp_list li").width()});
+					page--;
+				}
+		});
+		$('.arrow-right').on('click',function(){
+				if(!$("#exp_list").is(":animated")){
+					if(page==3){
+						$("#exp_list").animate({left:"-=50"},200,function(){
+							$(this).animate({left:"+=50"},200);
+						});
+						return false;
+					}	
+					console.log($(".exp_list li").width());
+					$("#exp_list").animate({left:"-="+$("#exp_list li").width()});
+					page++;
+				}
+		});
+	})
+	$("#header_p").mouseover(function(){
+		$("#header_p1").html("Resume");
+		$("#header_p2").html("前端工程师");
+	}).mouseout(function(){
+		$("#header_p1").html("hobo");
+		$("#header_p2").html("个人简历");	
+	})
+	$(function(){
+	    $('#dowebok').fullpage({
+	    	scrollingSpeed: 400,
+			css3: true,
+			resize: true,
+			// anchors: ["page1","page2","page3","page4","page5","page6"],
+			verticalCentered: false,
+			navigation:true,
+			afterRender:function(){
+				$("#home_content").addClass("home_zoom").css({"display":"block"});
+				$('#home_info_box').animate({width:"800px"},700,function(){
+					$(".home_info_li").eq(0).fadeIn(450,function(){
+						$(this).next().fadeIn(450,function(){
+							$(this).next().fadeIn(450,function(){
+								$(this).next().fadeIn(450,function(){
+								});
+							});
+						});
+					});
+				});
+			},
+			afterLoad:function(anchorLink,index){
+				if(index==2){
+					$("#about_content h1").after("<div class='title_en'><h2>· About me ·</h2></div>");
+					$(".title_en").animate({width:"130px"},800,function(){
+						$(".title_en h2").slideDown(400);
+					});
+					$("#about_info").animate({width:"800px",marginTop:"0",marginBottom:"0"},700,function(){
+						$("#about_info p").eq(0).animate({top:"0"},700,function(){
+							$("#about_info p").eq(1).animate({top:"0"},700,function(){
+								$("#about_info p").eq(2).animate({top:"0"},700,function(){
+									$("#about_info p").eq(3).animate({top:"0"},700);
+								});
+							});
+						});	
+					})
+				}
+				if(index==3){
+					$("#skill_content h1").after("<div class='title_en'><h2>· skill ·</h2></div>");
+					$(".title_en").animate({width:"130px"},800,function(){
+						$(".title_en h2").slideDown(400);
+					});
+				}
+				if(index==4){
+					$("#exp_content h1").after("<div class='title_en'><h2>· experience ·</h2></div>");
+					$(".title_en").animate({width:"130px"},800,function(){
+						$(".title_en h2").slideDown(400);
+					});
+				}
+				if(index==5){
+					$("#portfolio_content h1").after("<div class='title_en'><h2>· portfolio ·</h2></div>");
+					$(".title_en").animate({width:"130px"},800,function(){
+						$(".title_en h2").slideDown(400);
+					});
+				}
+				if(index==6){
+					$("#contact_content h1").after("<div class='title_en'><h2>· contact Me ·</h2></div>");
+					$(".title_en").animate({width:"130px"},800,function(){
+						$(".title_en h2").slideDown(400);
+						$("#contact_code").typewriter();
+					});
+				}
+			},
+			onLeave:function(index , nextIndex, direction){
+				if(index==2||index==3||index==4||index==5||index==6){
+					$(".title_en").remove();	
+				}
+			}
+	    });
+	});
+
+	(function($) {
+		$.fn.typewriter = (function() {
+			var timer,str;
+			return function(){
+				if(timer){
+					return;
+				}
+				this.each(function() {
+					var $ele = $(this), progress = 0;
+					str = (str || $ele.html()).replace(/\s+/g,'');					
+					$ele.html('').show();
+					timer = setInterval(function() {
+						var current = str.substr(progress, 1);
+						if (current == '<') {
+							progress = str.indexOf('>', progress) + 1;
+						} else {
+							progress++;
+						}
+						$ele.html(str.substring(0, progress) + (progress & 1 ? '_' : ''));//奇偶判断
+						if (progress >= str.length) {
+							$ele.html(str);
+							clearInterval(timer);
+							timer =null;
+						}
+					}, 100);
+				});
+				return this;
+			}
+		}())
+	})(jQuery);
+</script>
+</html>
