@@ -588,3 +588,16 @@ h2 {
 			background-image: url(../images/arrow-right-actived.png);
 		}
 		
+		.portfolio_container{
+			overflow:hidden;
+			margin:0 auto;
+			width:800px;
+			height:300px;
+			margin-top:30px;
+		}
+		.portfolio_container a{
+			text-align:center;
+			line-height:30px;
+			width:200px;
+			float: left;
+		}
