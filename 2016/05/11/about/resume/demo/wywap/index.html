@@ -1,798 +1,402 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="overflow: hidden; height: 100%;">
 <head>
-<title>Document</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--设置编码-->
-<meta name="author" content="demo.hobo.com">
-<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"><!--适应屏幕-->
-<meta name="apple-mobile-web-app-capable" content="yes" class=""><!--允许全屏显示-->
-<meta name="apple-mobile-web-app-status-bar-style" content="black"><!--设置状态栏-->
-<link rel="stylesheet" type="text/css" href="css/base.css" charset="">
-<link rel="stylesheet" type="text/css" href="css/index.css" charset="">
-<style type="text/css">
-	
-</style>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8"><!--设置编码-->
+	<meta name="author" content="hobocsdn.com">
+    <meta name="keywords" content="web前端个人简历展示，前端开发简历">
+    <meta name="description" content="郭育添的web前端工程师个人简历">
+	<title>web前端工程师简历</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/jquery.fullPage.css">
+	<link rel="stylesheet" href="css/index.css">
+	<style type="text/css">
+		
+	</style>
 </head>
-<body>
-	<div class="login_mask"></div>
-   	<div class="login_panel">
-		<div class="login_list">
-			<ul class="not_logined">
-				<form action="post" id="login_form">
-					<div class="login_contain">
-						<div class="inputbox" style="font-size: .32rem;position: relative;">
-							<input type="text" placeholder="example@163.com">
-						</div>
-						<div class="inputbox" style="font-size: .32rem;position: relative;">
-							<input type="text" placeholder="">
-						</div>
+<body style="overflow: hidden; height: 100%;">
+<!-- 		<div id="clock" style="opacity: 1;transform:translate(0px,0px)">
+		<div id="hourhand" style="height: 28px;
+    margin-top: -28px;transition: transform 1200ms cubic-bezier(0.39, 0.575, 0.565, 1) 500ms; transform: rotate(600deg);"></div>
+		<div id="minutehand" style="height: 36px;
+    margin-top: -36px;transition: transform 1300ms cubic-bezier(0.39, 0.575, 0.565, 1) 500ms; transform: rotate(678deg);"></div>
+			<div class="centerdot"></div>
+		</div> -->
+		<div id="header" style="opacity:.3;min-height:60px;"></div>
+		<header style="opacity:1;">
+				<div id="logo">
+					<div id="header_img" style="float:left;width:50px;height:50px;border-radius:50px;width:">
+						<img src="images/header-code.png" style="width:100%;height:100%;">
 					</div>
-					<div class="loginbox">
-						<div id="dologin">登录</div>
+					<div id="header_p" >
+						<p id="header_p1" >hobo</p>
+						<p id="header_p2">个人简历</p>
 					</div>
-				</form>
-			</ul>
-		</div>
-	</div>
-    
-   	<header id="l-indexheader" class="nav">
-   		<div class="u_topbar">
-	        <div class="u_llogo">
-	            <div class="icon_personal"></div>
-	        </div>
-	        <div class="u_logo"></div>
-	        <div class="u_rlogo">
-	            <a href="http://m.163.com/newsapp/applinks.html?s=wap"><div class="icon_appdownload"></div></a>
-	            <a id="h_email" href="http://mail.163.com/?s=wap"><div class="icon_email"><span style="display: none;"></span></div></a>
-	        </div>
+				</div>
+				<ul class="navbar">
+					<li><a href="">首页</a></li>
+					<li><a href="">随笔</a></li>
+					<li><a href="">积淀</a></li>
+					<li><a href="">关于</a></li>
+				</ul>
+				<button type="button" class="navbar-toggle">
+				        <span class="sr-only">导航</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+		      </button>
+	</header>
+	<div id="dowebok">
+	    <div id="home_content" class="section" style="display:none;">
+	        	<div id="home_title" style="text-align:center;margin-top:75px">
+		        	<img src="images/psb.jpg" style="width:256px;height:144px;">
+		        	<div style="margin:50px auto 30px;width:450px;">生活不知眼前苟且，须知不忘努力，不断上升，突破自我。</div>
+		        </div>
+		        <ul id='home_info_box' style="border-top:2px solid #ccc;width: 0;margin:15px auto;">
+		        	<div  class="home_info_li">我叫郭育添</div>
+		        	<div  class="home_info_li">25岁</div>
+		        	<div  class="home_info_li">一名热爱前端工作的工程师</div>
+		        	<div  class="home_info_li">15117949915@163.com</div>
+		        </ul>
+        </div>
+	    <div id="about_content" class="section" style="height: 510px;">
+	    		<div class="title">
+	    			<h1>关于我</h1>
+    			</div>
+    			<div id="about_list_content" style="border-radius:30px;width:800px;background:rgba(33,127,243,0.72);margin:20px auto;">
+    				<div class="about_list_item">
+    					<div class="about_list_eg">
+    						<img src="images/education.png" alt="">
+    					</div>
+    					<div style="margin:20px auto;width: 100px;line-height: 25px;position: relative;color: #fff;">
+    						学历
+    						<p style="text-align:right;">本科</p>
+    					</div>
+    				</div>
+    				<div class="about_list_item">
+						<div class="about_list_eg">
+    						<img src="images/age.png" alt="">
+    					</div>
+	    					<div style="margin:20px auto;width: 100px;line-height: 25px;position: relative;color: #fff;">
+    						年龄
+    						<p style="text-align:right;">25</p>
+    					</div>
+    				</div>
+    				<div class="about_list_item">
+						<div class="about_list_eg">
+    						<img src="images/location.png" alt="">
+    					</div>    					
+    					<div style="margin:20px auto;width: 100px;line-height: 25px;position: relative;color: #fff;">
+    						坐标
+    						<p style="text-align:right;">深圳</p>
+    					</div>    						
+
+    				</div>
+    				<div class="about_list_item">
+    					<div class="about_list_eg">
+    						<img src="images/work.png" alt="" style="width:50px;height:50px;margin:15px;">
+    					</div>
+    					<div style="margin:20px auto;width: 100px;line-height: 25px;position: relative;color: #fff;">
+    						状态
+    						<p style="text-align:right;">离职</p>
+    					</div>
+    				</div>
+    			</div>
+    			<div id="about_info">
+    				<p>2014年毕业于北京化工大学信息科学与技术学院</p>
+    				<p>喜欢优雅的代码，代码强迫症患者</p>
+    				<p>AngularJs ReactJs</p>
+    				<p>层出不穷的框架让人兴奋，而不同框架背后的思路却在逐渐统一</p>
+    			</div>
 	    </div>
-   	</header>
-
-   	<div class="main_content" style="position:relative;z-index:127"> 
-		  	<div> 
-   		<div id="header-bar" class="bar_wrap ">
-			<div class="u_topmenu clearfix " style="height: 0.82rem; overflow: hidden;"> 
-				<div class="nav-index">
-					<ul style="white-space: nowrap;">
-	                    <li>
-		                    <a href="#">
-		                        <span>推荐</span>
-		                    </a>
-		                </li>
-		                            <li>
-		                    <a href="#">
-		                        <span>新闻</span>
-		                    </a>
-		                </li>
-                        <li class="nav_current">
-		                    <a href="#">
-		                        <span>娱乐</span>
-		                    </a>
-		                </li>
-		                            <li>
-		                    <a href="#">
-		                        <span>体育</span>
-		                    </a>
-		                </li>
-                        <li>
-		                    <a href="#">
-		                        <span>财经</span>
-		                    </a>
-		                </li>
-                        <li>
-		                    <a href="#">
-		                        <span>汽车</span>
-		                    </a>
-		                </li><li>
-		                    <a href="#">
-		                        <span>军事</span>
-		                    </a>
-		                </li><li>
-		                    <a href="#">
-		                        <span>图片</span>
-		                    </a>
-		                </li><li>
-		                    <a href="#">
-		                        <span>视频</span>
-		                    </a>
-		                </li><li>
-		                    <a href="#">
-		                        <span>段子</span>
-		                    </a>
-		                </li>
-		                 </li><li>
-		                    <a href="#">
-		                        <span>时尚</span>
-		                    </a>
-		                </li><li>
-		                    <a href="#">
-		                        <span>本地</span>
-		                    </a>
-		                </li><li>
-		                    <a href="#">
-		                        <span>订阅</span>
-		                    </a>
-		                </li><li>
-		                    <a href="#">
-		                        <span>手机</span>
-		                    </a>
-		                </li><li>
-		                    <a href="#">
-		                        <span>公开课</span>
-		                    </a>
-		                </li><li>
-		                    <a href="#">
-		                        <span>科技</span>
-		                    </a>
-		                </li><li>
-		                    <a href="#">
-		                        <span>跟贴</span>
-		                    </a>
-		                </li><li>
-		                    <a href="#">
-		                        <span>游戏</span>
-		                    </a>
-		                </li><li>
-		                    <a href="#">
-		                        <span>数码</span>
-		                    </a>
-		                </li>
-		                <li>
-		                    <a href="#">
-		                        <span>教育</span>
-		                    </a>
-		                </li>
-		                 <li>
-		                    <a href="#">
-		                        <span>健康</span>
-		                    </a>
-		                </li>
-		                 <li>
-		                    <a href="#">
-		                        <span>独家</span>
-		                    </a>
-		                </li>
-		                 <li>
-		                    <a href="#">
-		                        <span>旅游</span>
-		                    </a>
-		                </li>
-		                <li>
-		                    <a href="#">
-		                        <span>亲子</span>
-		                    </a>
-		                </li><li>
-		                    <a href="#">
-		                        <span>星闻</span>
-		                    </a>
-		                </li><li>
-		                    <a href="#">
-		                        <span>房产</span>
-		                    </a>
-		                </li>
-		                 <li>
-		                    <a href="#">
-		                        <span>家居</span>
-		                    </a>
-		                </li>
-		                 <li>
-		                    <a href="#">
-		                        <span>小说</span>
-		                    </a>
-		                </li>
-		                 <li>
-		                    <a href="#">
-		                        <span>漫画</span>
-		                    </a>
-		                </li>
-		                 <li>
-		                    <a href="#">
-		                        <span>BoBo</span>
-		                    </a>
-		                </li>
-		                 <li>
-		                    <a href="#">
-		                        <span>更多</span>
-		                    </a>
-		                </li>
-		            </ul>
-		         </div>   
-			</div>
-		    <div class=" clearfix" style="overflow: hidden;padding-top:.82rem;"></div>
+	     <div id="skill_content" class="section">
+				<div class="title">
+	    			<h1>专业技能</h1>
+    			</div>
+    			<div >
+    				<p id="skill_info" style="width:600px;margin:30px auto;text-align:center;">前端的学习需要持之以恒，知识深度与广度都很重要,不过我认为需要先精后广，一专多长。前端开发需要掌握基础的HTML、CSS、javascript之后，重中之重就是原生javascript的理解，必需有模块化，组件化，工程化思想。广而学习性能优化，SEO，框架，响应式页面等细节方面。</p>
+					<div id="skill_list" style="padding-top:15px;">
+						<div class="skill_item">
+							<div class="skill_name">
+		    						<img src="images/icon-html.png" alt="">
+							</div>
+							<ul class="skill_ifo">
+								<li>深刻理解Web标准</li>
+								<li>熟练运用html标签</li>
+								<li>掌握html5如SVG，localstorage新特性</li>
+							</ul>
+						</div>
+						<div class="skill_item">
+							<div class="skill_name">
+		    						<img src="images/icon-css.png" alt="">
+							</div>
+							<ul class="skill_ifo">
+								<li>熟练运用css及css3新属性</li>
+								<li>注重浏览器兼容性，熟悉常见的css hack（兼容至IE8）</li>
+								<li>掌握bootstrap框架及源码的实现</li>
+								<li>掌握css预编译器Less及Sass</li>
+							</ul>
+						</div>
+						<div class="skill_item">
+							<div class="skill_name">
+	    						<img src="images/icon-js.png" alt="">
+							</div>							
+							<ul class="skill_ifo">
+								<li>掌握jQuery</li>
+								<li>掌握原生JS的编程</li>
+								<li>注重JavaScript性能优化</li>
+								<li>正在学习ES6</li>
+							</ul>							
+						</div>
+						<div class="skill_item">
+							<div class="skill_name">
+		    						<img src="images/icon-nodejs.png" alt="">
+							</div>
+						</div>
+					</div>	
+    			</div>
 		</div>
-
-		  	</div>
-		<div id="contents" style="min-height:30rem;position:relative;overflow: hidden;">
-			<div id="viewport"> 
-					<div id="slider"  class="floor slider-wrapper" >
-				        <ul  id="slider_touch" class="new-slide"  data-slide-ul="firstUl" >
-				            <li  data-ul-child="child" class="slide-li"><a  class="J_ping" page_name="index" href='#'><img alt="促销活动" src="images/1.jpg"></a></li>
+	    <div id="exp_content" class="section">
+				<div class="title">
+	    			<h1>工作经历</h1>
+    			</div>
+    			<div id="exp_slider" style="padding-bottom:15px;" style="position:relative;">
+    				<div id="exp_slider_content" style="position:relative;">
+	    				<div class="arrow-left"></div>
+    					<ul id="exp_list" >
+							<li>
+								<dl>
+									<dt>东莞天宇网络技术有限公司</dt>
+									<dd>2014/05 -- 2014/09</dd>
+									<dd>基于微信平台的网页开发，项目包括：微信官网，微信客服，微信商城，与微信活动等功能。 </dd>
+									<dd>基于php后台开发的，微信小游戏，微信网页模版做一些定制和兼容性处理。</dd>
+									<dd>工作之余开始系统性的自学web前端各项技术</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>正益移动互联科技股份有限公司</dt>
+									<dd>2014/09 -- 至今</dd>
+									<dd>项目一：中国联合航空APP  (2014-09中旬-2014-11中旬) </dd>
+									<dd>在appcan平台上运用IDE开发工具，使用前端html+css+javascript快速完成App跨平台(IOS和andriod)开发。</dd>
+									<dd>负责移动端UI界面的还原，以及前端使用ajax与后端进行业务对接的展现和逻辑处理。</dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt>正益移动互联科技股份有限公司</dt>
+									<dd>2014/09 -- 至今</dd>
+									<dd>项目二：南方基金APP (2014-12-至今) </dd>
+									<dd>一期研发负责跟进项目前期需求调研，详细需求统计分析，到实施运维，人力安排，项目进度把控，协调人员对项目支持，后期负责整个项目维护并负责整个移动端wap的开发和微信公众号业务的整合。</dd>
+									<dd>收获:对前端知识有进一步认识，抛开具体业务，开始关注模块化，组件化，工程化思想。在熟练使用jQuery基础上，加深对原生javascript理解，接触预编译处理，前端构建工具等待。</dd>
+								</dl>
+							</li>
 						</ul>
-				        <div class="focus-btn"  data-small-btn="smallbtn"></div>
-				    </div>
-			</div>
+	    				<div class="arrow-right"></div>
+    				</div>
+    			</div>
+				</div>
+		<div id="portfolio_content" class="section">
+				<div class="title">
+	    			<h1>作品集</h1>
+    			</div>
+    			<div class="portfolio_container" style="">
+    				<a style="text-align:center;line-height:30px;width:200px;float: left;" href="demo/wywap/index.html">
+						<div style="margin:0 auto;background-image:url(images/icon57x57.png);background-size:100% 100%;width:80px;height:80px;background-repeat:no-repeat;"></div>
+	    				demo(仿网易wap)</a>
+	    			<a style="" href="https://m.nffund.com">
+						<div style="margin:0 auto;background-image:url(images/share-nfjj.png);background-size:100% 100%;width:80px;height:80px;background-repeat:no-repeat;"></div>
+	    				南方基金wap</a>		
+    			</div>
+
 		</div>
+		 <div id="contact_content" class="section" style="position:relative;">
+				<div class="title">
+	    			<h1>联系我</h1>
+    			</div>
+    			<div style="text-align:center;margin-top:30px;">
+    				<p style="font-size:30px;">I BELIEVE</p>
+					<p id="contact_believe_en" style="font-size:30px;">
+    					<span>DONE</span>
+    					<span>IS</span>
+    					<span>BETTER</span>
+    					<span>THAN</span>
+    					<span>PERFECT</span>
+    				    .</p>
+    				<div  style="line-height:24px;font-size:14px;width:100%;height:200px;margin-top:15px;">
+    					<p  id="contact_code" style="display:none;">
+	    						学习是一个充实愉悦的过程<br/>
+							前端更贴近用户，这种体验非常美妙<br/>
+							热爱前端，也热爱一切美好的事物<br/>
+							行路有良友，便是捷径<br/>
+							世界这么大，带上我吧，我们一起去探索<br/>
+    					</p>
+    				</div>
+    				<footer >
+							<div class="footer"><a href="http://www.cnblogs.com/hoboStage/">博客</a>|<a href="#" >知乎</a>|<a href="https://github.com/hobocsdn">Github</a></div>
+							<div class="footer ">All Rights Reserved&nbsp;</div>
+							<div class="footer ">Copyright © 2016 - 2017</div>
+					</footer>
+    			</div>
 
-   	</div>
-	<footer></footer>
-	<div class="sub_box" style="">
-	    <div class="back_to_top"><i class="icon-gotop iconfont"></i></div>
-	    <div class="feed_back"><i class="icon-suggest">反馈</i></div>
+		</div>
+	    
 	</div>
-	<script type="text/javascript" src="js/zepto.min.js"></script>
-	<script type="text/javascript" src="js/hammer.min.js"></script>
-	<script type="text/javascript" src="js/Mbase.js"></script>
-	<script type="text/javascript" src="js/slider.js"></script>
-	<script> 
-        var Dpr = 1, uAgent = window.navigator.userAgent;
-        var isIOS = uAgent.match(/iphone/i);
-        var isYIXIN = uAgent.match(/yixin/i);
-        var is2345 = uAgent.match(/Mb2345/i);
-        var ishaosou = uAgent.match(/mso_app/i);
-        var isSogou = uAgent.match(/sogoumobilebrowser/ig);
-        var isLiebao = uAgent.match(/liebaofast/i);
-        var isGnbr = uAgent.match(/GNBR/i);
-        function resizeRoot(){
-            var wWidth = (screen.width > 0) ? (window.innerWidth >= screen.width || window.innerWidth == 0) ? screen.width : window.innerWidth : window.innerWidth, wDpr, wFsize;
-            var wHeight = (screen.height > 0) ? (window.innerHeight >= screen.height || window.innerHeight == 0) ? screen.height : window.innerHeight : window.innerHeight;
-            if (window.devicePixelRatio) {
-                wDpr = window.devicePixelRatio;
-            } else {
-                wDpr = isIOS ? wWidth > 818 ? 3 : wWidth > 480 ? 2 : 1 : 1;
-            }
-            if(isIOS) {
-                wWidth = screen.width;
-                wHeight = screen.height;
-            }
-            // if(window.orientation==90||window.orientation==-90){
-            //     wWidth = wHeight;
-            // }else if((window.orientation==180||window.orientation==0)){
-            // }
-            if(wWidth > wHeight){
-                wWidth = wHeight;
-            }
-            wFsize = wWidth > 1080 ? 144 : wWidth / 7.5;
-            wFsize = wFsize > 32 ? wFsize : 32;
-            window.screenWidth_ = wWidth;
-            if(isYIXIN || is2345 || ishaosou || isSogou || isLiebao || isGnbr){//YIXIN 和 2345 这里有个刚调用系统浏览器时候的bug，需要一点延迟来获取
-                setTimeout(function(){
-                    wWidth = (screen.width > 0) ? (window.innerWidth >= screen.width || window.innerWidth == 0) ? screen.width : window.innerWidth : window.innerWidth;
-                    wHeight = (screen.height > 0) ? (window.innerHeight >= screen.height || window.innerHeight == 0) ? screen.height : window.innerHeight : window.innerHeight;
-                    wFsize = wWidth > 1080 ? 144 : wWidth / 7.5;
-                    wFsize = wFsize > 32 ? wFsize : 32;
-                    // document.getElementsByTagName('html')[0].dataset.dpr = wDpr;
-                    document.getElementsByTagName('html')[0].style.fontSize = wFsize + 'px';
-                    //document.getElementById("fixed").style.display="none";
-                },500);
-            }else{
-                // document.getElementsByTagName('html')[0].dataset.dpr = wDpr;
-                document.getElementsByTagName('html')[0].style.fontSize = wFsize + 'px';
-                //document.getElementById("fixed").style.display="none";
-            }
-            // alert("fz="+wFsize+";dpr="+window.devicePixelRatio+";UA="+uAgent+";width="+wWidth+";sw="+screen.width+";wiw="+window.innerWidth+";wsw="+window.screen.width+window.screen.availWidth);
-        }
-        resizeRoot();
-	</script>
-	<script type="text/javascript"> 
-	  	(function($,NEWWAP,Handlebars){
-	  		 var rprefix = "webkit moz ms o".split(" ");//
-  	  		 var lastTime = 0;
-	  		 for (var i , rAnimationFrame = window.requestAnimationFrame, cAnimationFrame = window.cancelAnimationFrame, l = 0; l < rprefix.length && (!rAnimationFrame || !cAnimationFrame); l++)
-		        i = r[l],
-		        rAnimationFrame = rAnimationFrame || window[i + "RequestAnimationFrame"],
-		        cAnimationFrame = cAnimationFrame || window[i + "CancelAnimationFrame"] || window[i + "CancelRequestAnimationFrame"];
-
-		    if(!(rAnimationFrame && cAnimationFrame)) {
-		    	rAnimationFrame = function(animate, e) {//如果不存在RequestAnimationFrame
-			        var now = (new Date).getTime()//当前时间
-			          , i = Math.max(0, 16 - (now - lastTime))//修正误差
-			          , r = window.setTimeout(function() {
-			            animate(now + i)//每帧操作
-			        }, i);
-			        return lastTime = n + i,r
-			    },
-			    cAnimationFrame = function(timer) {
-			        window.clearTimeout(timer)
-			    }
-		    }
-		    window.requestAnimationFrame = rAnimationFrame,
-    		window.cancelAnimationFrame = cAnimationFrame;
-
-    		NEWWAP.tools = {
-    			uaMatch: {
-		            iOS5: null  != navigator.userAgent.match(/OS 5_/i),
-		            isIos9: null  != navigator.userAgent.match(/OS 9_/i),
-		            isIphone: !!navigator.userAgent.match(/iphone/gi),
-		            isIos: !!navigator.userAgent.match(/iphone|ipad/gi),
-		            isIpad: !!navigator.userAgent.match(/ipad/gi),
-		            isNewsapp: !!navigator.userAgent.match(/NewsApp/gi),
-		            isWinPhone: !!navigator.userAgent.match(/Windows Phone/gi),
-		            isWeixin: !!navigator.userAgent.match(/MicroMessenger/gi),
-		            isSogou: !!navigator.userAgent.match(/sogoumobilebrowser/gi),
-		            isUCBrowser: !!navigator.userAgent.match(/UCBrowser/gi),
-		            isQQBrowser: !!navigator.userAgent.match(/MQQBrowser/gi),
-		            isBaidu: !!navigator.userAgent.match(/baidu/gi),
-		            isTrident: navigator.userAgent.indexOf("Trident") > -1,
-		            isPresto: navigator.userAgent.indexOf("Presto") > -1,
-		            isWebKit: navigator.userAgent.indexOf("AppleWebKit") > -1,
-		            isGecko: navigator.userAgent.indexOf("Gecko") > -1 && -1 == navigator.userAgent.indexOf("KHTML"),
-		            isMobile: !!navigator.userAgent.match(/AppleWebKit.*Mobile.*/),
-		            isTIOS: !!navigator.userAgent.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/),
-		            isAndroid: navigator.userAgent.indexOf("Android") > -1 || navigator.userAgent.indexOf("Adr") > -1,
-		            iswebApp: -1 == navigator.userAgent.indexOf("Safari"),
-		            isQQ: !!navigator.userAgent.match(/QQ\//i),
-		            isIosSafari: function() {
-		                var t = navigator.userAgent
-		                  , e = /applewebkit\/\d+(\.\d+)*\d+\s*\(KHTML,\s*like\s*Gecko\)\s*version\/\d+(\.\d+)*\.\d+\s*mobile\/\d+\w\d+\s*safari\/\d+(\.\d+)*\.\d+$/i
-		                  , n = window.hasOwnProperty("isLBBrowser");
-		                return e.test(t) && !n
-		            }()
-		        },
-		        publicMethod: {
-		            localParam: function(t, e) {//解析参数
-		                var n;
-		                return t = t || window.location.search,
-		                e = e || window.location.hash,
-		                n = function(t, e) {
-		                    var n;
-		                    return t ? (n = {},
-		                    t.replace(e, function(t, e, i, a) {
-		                        n[e] = a
-		                    }),
-		                    n) : void 0
-		                }
-		                ,
-		                {
-		                    search: n(t, new RegExp("([^?=&]+)(=([^&]*))?","g")) || {},
-		                    hash: n(e, new RegExp("([^#=&]+)(=([^&]*))?","g")) || {}
-		                }
-		            },
-		            preDefault: function(e) {
-		                e.preventDefault()
-		            },
-		            jsonp: function(e, n) {
-		                var i, a = document.getElementsByTagName("head")[0], r = e.callbackName, o = e.url, s = e.isDeferred || !0;
-		                s && (i = $.Deferred && $.Deferred()),
-		                window[r] = void 0,
-		                window[r] = function(t) {
-		                    l.parentNode && a.removeChild(l),
-		                    n && n(t),
-		                    i && i.resolve(t)
-		                }
-		                ;
-		                var l = document.createElement("script");
-		                return l.src = o,
-		                a.appendChild(l),
-		                l.onerror = function(t) {
-		                    a.removeChild(l),
-		                    i && i.reject(t)
-		                }
-		                ,
-		                i && i.promise()
-		            },
-		            getDayDvalue: function(e) {
-		                var n, i = "number" != t.type(e) ? e.replace(/\-/g, "/") : e, a = new Date(i).getTime(), r = (new Date).getTime(), o = r - a, s = Math.ceil(o / 1e3 / 60);
-		                return n = 60 > s ? s.toFixed() + "\u5206\u949f\u524d" : s >= 60 && 1440 > s ? (s / 60).toFixed() + "\u5c0f\u65f6\u524d" : s >= 1440 && 2880 > s ? "\u6628\u5929" : s >= 2880 && 4320 > s ? "\u524d\u5929" : "3\u5929\u524d"
-		            },
-		            arrToObj: function(t, e) {
-		                for (var n = {}, i = 0, a = t.length; a > i; i++)
-		                    t[i][e] && (n[t[i][e]] = t[i]);
-		                return n
-		            },
-		            getDirection: function() {
-		                function start(e) {
-		                    i.x = e.touches[0].clientX,
-		                    i.y = e.touches[0].clientY
-		                }
-		                function move(e) {
-		                    if (a.x = e.changedTouches[0].clientX - i.x,
-		                    a.y = e.changedTouches[0].clientY - i.y,
-		                    Math.abs(a.x) > Math.abs(a.y)) {
-		                        if (a.x > 0)
-		                            return "right";
-		                        if (a.x < 0)
-		                            return "left"
-		                    } else if (Math.abs(a.x) < Math.abs(a.y)) {
-		                        if (a.y > 0)
-		                            return "bottom";
-		                        if (a.y < 0)
-		                            return "top"
-		                    }
-		                }
-		                function end(t) {
-		                    a = {}
-		                }
-		                var i = {}
-		                  , a = {};
-		                return {
-		                    start: start,
-		                    move: move,
-		                    end: end
-		                }
-		            },
-		            find: function(t, e) {
-		                for (var n, i = 0, a = t.length; a > i; i++)
-		                    if (e(i, t[i])) {
-		                        n = t[i];
-		                        break
-		                    }
-		                return n
-		            },
-		            reviseViewPort: function(e, n) {
-		                var i = e || 200
-		                  , a = 0
-		                  , r = n || 5
-		                  , o = setInterval(function() {
-		                    var e, n = screen.width > 0 && window.innerWidth >= screen.width ? screen.width : window.innerWidth;
-		                    n < window.screenWidth_ ? (window.screenWidth_ = n,
-		                    t(window).trigger("viewPort:changed", n),
-		                    e = n > 1080 ? 144 : n / 7.5,
-		                    e = e > 32 ? e : 32,conosle.log('reviseViewPort'),
-		                    document.getElementsByTagName("html")[0].style.fontSize = e + "px",
-		                    clearInterval(o)) : a++,
-		                    a >= r && clearInterval(o)
-		                }, i)
-		            },
-		            isSupportSticky: function() {//检测position:sticky --新的css3属性
-		                for (var t = ["", "-webkit-", "-ms-", "-moz-", "-o-"], e = "", n = 0; n < t.length; n++)
-		                    e += "position:" + t[n] + "sticky;";
-		                var i = document.createElement("div")
-		                  , a = document.body;
-		                i.style.cssText = "display:none;" + e,
-		                a.appendChild(i);
-		                var r = /sticky/i.test(window.getComputedStyle(i).position);
-		                return a.removeChild(i),
-		                i = null ,
-		                r
-		            },
-		            cookie: {
-		                getItem: function(t) {
-		                    return decodeURIComponent(document.cookie.replace(new RegExp("(?:(?:^|.*;)\\s*" + encodeURIComponent(t).replace(/[\-\.\+\*]/g, "\\$&") + "\\s*\\=\\s*([^;]*).*$)|^.*$"), "$1")) || null 
-		                },
-		                setItem: function(t, e, n, i, a, r) {
-		                    if (!t || /^(?:expires|max\-age|path|domain|secure)$/i.test(t))
-		                        return !1;
-		                    var o = "";
-		                    if (n)
-		                        switch (n.constructor) {
-		                        case Number:
-		                            o = n === 1 / 0 ? "; expires=Fri, 31 Dec 9999 23:59:59 GMT" : "; max-age=" + n;
-		                            break;
-		                        case String:
-		                            o = "; expires=" + n;
-		                            break;
-		                        case Date:
-		                            o = "; expires=" + n.toUTCString()
-		                        }
-		                    return document.cookie = encodeURIComponent(t) + "=" + encodeURIComponent(e) + o + (a ? "; domain=" + a : "") + (i ? "; path=" + i : "") + (r ? "; secure" : ""),
-		                    !0
-		                },
-		                removeItem: function(t, e, n) {
-		                    return t && this.hasItem(t) ? (document.cookie = encodeURIComponent(t) + "=; expires=Thu, 01 Jan 1970 00:00:00 GMT" + (n ? "; domain=" + n : "") + (e ? "; path=" + e : ""),
-		                    !0) : !1
-		                },
-		                hasItem: function(t) {
-		                    return new RegExp("(?:^|;\\s*)" + encodeURIComponent(t).replace(/[\-\.\+\*]/g, "\\$&") + "\\s*\\=").test(document.cookie)
-		                },
-		                keys: function() {
-		                    for (var t = document.cookie.replace(/((?:^|\s*;)[^\=]+)(?=;|$)|^\s*|\s*(?:\=[^;]*)?(?:\1|$)/g, "").split(/\s*(?:\=[^;]*)?;\s*/), e = 0; e < t.length; e++)
-		                        t[e] = decodeURIComponent(t[e]);
-		                    return t
-		                }
-		            },
-		            getRandom: function(t, e) {
-		                return Math.round(Math.random() * (e - t) + t)
-		            },
-		            isLocalStorageSupported: function() {
-		                var t = "test"
-		                  , e = window.localStorage;
-		                try {
-		                    e.setItem(t, "testValue")
-		                } catch (n) {
-		                    return console.log("localStorage.setItem\u4e0d\u53ef\u4ee5\u6267\u884c"),
-		                    !1
-		                }
-		                try {
-		                    return "testValue" != e.getItem(t) ? !1 : (e.removeItem(t),
-		                    !0)
-		                } catch (n) {
-		                    return console.log("localStorage.getItem\u4e0d\u53ef\u4ee5\u6267\u884c"),
-		                    !1
-		                }
-		            },
-		            isCookieSupported: function() {
-		                var t = "test"
-		                  , n = e.tools.publicMethod.cookie;
-		                try {
-		                    n.setItem(t, "testValue")
-		                } catch (i) {
-		                    return console.log("docCookies.setItem\u4e0d\u53ef\u4ee5\u6267\u884c"),
-		                    !1
-		                }
-		                try {
-		                    return "testValue" != n.getItem(t) ? !1 : (n.removeItem(t),
-		                    !0)
-		                } catch (i) {
-		                    return console.log("docCookies.getItem\u4e0d\u53ef\u4ee5\u6267\u884c"),
-		                    !1
-		                }
-		            },
-		            urlAddSearch: function(t, e, n) {
-		                var i, a = n ? n : !0, r = function(t) {
-		                    var e = document.createElement("a");
-		                    return e.href = t,
-		                    e
-		                }
-		                , t = new r(t), o = t.href.match(/\?/) && t.href.match(/\?$/) ? "?" : "", s = t.search;
-		                o || t.href.match(/\?/) || (o = "?"),
-		                s += o;
-		                for (var l in e)
-		                    if (e[l] && ("string" == typeof e[l] || "number" == typeof e[l]))
-		                        if (a) {
-		                            var c = this.localParam(s);
-		                            if (c.search[l]) {
-		                                var u = new RegExp(l + "=([^&]*)","");
-		                                s = s.replace(u, function(t, n) {
-		                                    return l + "=" + e[l]
-		                                })
-		                            } else
-		                                s += "&" + l + "=" + e[l]
-		                        } else
-		                            s += "&" + l + "=" + e[l];
-		                return s = s.replace(/\?&/g, function() {
-		                    return "?"
-		                }),
-		                i = t.origin + t.pathname + s + t.hash
-		            },
-		            inheritSearch: function(t, e, n) {
-		                var i = n ? n : location.href
-		                  , a = i.replace(/.*(\?.*)/, function(t, e) {
-		                    return e
-		                })
-		                  , r = e
-		                  , o = {}
-		                  , s = this.localParam(a).search;
-		                return t.forEach(function(t, e, n) {
-		                    s[t] && (o[t] = s[t])
-		                }),
-		                r = this.urlAddSearch(r, o)
-		            },
-		            scrollY: function() {
-		                return document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop
-		            },
-		            simpleTransition: function(t, e, n, i) {
-		                var a = function(t) {
-		                    t += (e - t) * n,
-		                    t = Math.abs(e - t) < 1 ? e : t,
-		                    i(t),
-		                    t !== e && rAnimationFrame(function() {
-		                        a(t)
-		                    })
-		                }
-		                  , s = rAnimationFrame(function() {
-		                    a(t)
-		                });
-		                return {
-		                    stop: function() {
-		                        o(s)
-		                    }
-		                }
-            		}
-        		},
-    		} 
-	  	})(Zepto,window.NEWWAP = window.NEWWAP || {},'')
-	</script>
-
-	<script> 
-		//业务逻辑
-		(function(e, t) {
-		    function n() {
-		        this.config = {
-		            headerbar: ".bar_wrap",
-		            header: "#l-indexheader",
-		            subbox: ".sub_box",
-		            backTop: ".back_to_top",
-		            feedBack: ".feed_back"
-		        },
-		        this.systemOptions = {
-		            width: screen.width > 0 && window.innerWidth >= screen.width ? screen.width : window.innerWidth,
-		            anchor: window.location.href,
-		            anchor_hash: window.location.hash,
-		            Dpr: 1,
-		            uAgent: window.navigator.userAgent,
-		            firstSrceenHeight: screen.height > 0 && window.innerHeight >= screen.height ? screen.height : window.innerHeight,
-		            scrollHeight: l.publicMethod.scrollY(),
-		            banBrowser: l.uaMatch.isWX || l.uaMatch.isQQBrowser || l.uaMatch.isUCBrowser || l.uaMatch.isBaidu,
-		            barHeight: '',//e(".u_topmenu").offset().height,
-		            jokeMainWidth: Math.floor(6.9 * parseInt(document.getElementsByTagName("html")[0].style.fontSize))
-		        },
-		        this.headerbar = e(".bar_wrap"),
-		        this.header = e("#l-indexheader"),
-		        this.subbox = e(".sub_box"),
-		        this.backtop = e(".back_to_top", this.subbox),
-		        this.feedback = e(".feed_back", this.subbox),
-		        this.iconPersonal = $('.icon_personal'),
-		        this.loginMask = $('.login_mask')
-		    }
-		    var a = t.infoFlow
-		      , l = t.tools
-		      , i = t.indexTools;
-		    n.prototype = {
-		        init: function() {
-		            //l.uaMatch.isIos && (this.systemOptions.width = screen.width),
-		            //l.publicMethod.reviseViewPort(200);
-		           // this.initHHelper(),
-		           // this.setDownloadLink(),
-		           // this.dotStatus(".more_channel.up", "navDot"),
-		            //this.statfocusClick();
-		            this.sliderInit();
-		        },
-		        sliderInit:function(){
-		        	var sliderImgList = [{"url":"#","title":"手机phone趴","img":"images/1.jpg","exposalUrl":""},{"url":"#","title":"促销活动","img":"images/2.jpg","exposalUrl":""},{"url":"#","title":"促销活动","img":"images/3.jpg","exposalUrl":""},{"sourceValue":"5_0_3_68145_","activityId":"68145","url":"#","title":"个护清洁618返场","img":"images/4.jpg","exposalUrl":""}]
-				   var sliderHTML = function() {
-			            var f = [];
-			            for (var e = 1; e < sliderImgList.length; e++) {
-			                var c = sliderImgList[e];
-			                f.push('<li  data-ul-child="child"  class="slide-li"  ><a  page_name="index" href="' + c.url + '" ><img alt="' + c.title + '"  src="' + c.img + '"  /></a></li>')
-			            }
-			            f = f.join("");
-			            var h = $("#slider_touch");
-			            h.append(f);
-			            var g = h.children("li").first().height() + "px";
-
-			        }();
-				   var slider = slide('#slider');
-				   slider.init({
-			                        loop: true,
-			                        smallBtn: true,
-			                        autoPlay: true,
-			                        autoHeight: true,
-			                        playTime: 3000
-			                    })
-		        },
-		        run: function() {
-		            this.backtop && this.backToTop(),
-		            this.feedback && this.feedBack(),
-		            this.scrolling();
-		            this.loginPanel();
-		            this.registerNavBar();
-		           // this.spreadNav()
-		        },
-		        backToTop: function() {
-		            this.backtop.click(function() {
-		                window.scrollTo(0, 0)
-		            })
-		        },
-		        feedBack: function() {
-		            this.feedback.click(function() {
-		            	alert('反馈意见')
-		                //window.open("http://3g.163.com/ntes/special/0034073A/suggest.html", "_blank")
-		            })
-		        },
-		        registerNavBar:function(){
-	        		var maxScrollDis = $('.nav-index')[0].scrollWidth-$('.nav-index')[0].offsetWidth;
-		        	$('.nav-index').delegate('li','click',function(){
-		        		var scrollDis =($(this)[0].offsetLeft-62)>maxScrollDis?maxScrollDis:($(this)[0].offsetLeft-62);
-		        		var scrollLeft = $('.nav-index')[0].scrollLeft; 
-		        		scrollLeft !== scrollDis && l.publicMethod.simpleTransition($('.nav-index')[0].scrollLeft,scrollDis,.2,function(dis){
-								$('.nav-index').scrollLeft(dis);
-							})
-					});
-		        },
-		        loginPanel:function(){
-		        	this.iconPersonal.on('click',function(){
-						$('.login_panel').addClass('show').prev().addClass('show');
-					})
-					this.loginMask.on('click',function(){
-						$(this).removeClass('show').next().removeClass('show');
-					})	
-		        },
-		        scrolling: function() {//滚动检测
-		            var t, n = this, a = n.systemOptions.firstSrceenHeight, i = (n.systemOptions.barHeight,
-		            l.publicMethod.isSupportSticky());
-		            i ? (e(".fixedhack").addClass("ios_fixed"),
-		            e(window).on("scroll", function() {
-		                t = l.publicMethod.scrollY(),
-		                t > n.systemOptions.firstSrceenHeight ? n.subbox.show() : t < n.systemOptions.firstSrceenHeight && n.subbox.hide()
-		            })) : (e(window).on("touchend", function() {
-		                var a = e(n.config.header).offset().height;
-		                t = l.publicMethod.scrollY(),
-		                t > a && !n.headerbar.hasClass("fixedheader") ? (n.headerbar.addClass("fixedheader"),
-		                n.header.addClass("have_fixedbars")) : a > t && n.headerbar.hasClass("fixedheader") && (n.headerbar.removeClass("fixedheader"),
-		                n.header.removeClass("have_fixedbars"))
-		            }),
-		            e(".content-list").on("touchmove", function() {//处理content侧滑
-		                var a = e(n.config.header).offset().height;
-		                t = l.publicMethod.scrollY(),
-		                t > a ? n.headerbar.hasClass("fixedheader") || (n.headerbar.addClass("fixedheader"),
-		                n.header.addClass("have_fixedbars")) : n.headerbar.hasClass("fixedheader") && (n.headerbar.removeClass("fixedheader"),
-		                n.header.removeClass("have_fixedbars"))
-		            }),
-		            e(window).on("scroll", function() {
-		                var i = e(n.config.header).offset().height;
-		                console.log(i);
-		                t = l.publicMethod.scrollY();
-		                if(t > i) {
-			                	if(!n.headerbar.hasClass("fixedheader")) {
-			                		n.headerbar.addClass("fixedheader"),
-			                n.header.addClass("have_fixedbars");
-			                	}
-			                t > a ? n.subbox.show() : a > t && n.subbox.hide()
-		            	}else{
-			            		i > t && n.headerbar.hasClass("fixedheader") && (n.headerbar.removeClass("fixedheader"),
-			                n.header.removeClass("have_fixedbars"))
-		            	}
-		            }))
-		        },
-		        adListenerCallback: function() {
-		            e(window).on("getADSucc", function(n, l, i, o) {
-		                for (var s = l.banner, r = l.bottom ? l.bottom[0] : "", c = !1, h = s.length, u = h - 1; u >= 0; u--)
-		                    t.ad.render(s[u], now_cnn),
-		                    c = "enlargeAD" == s[u].type || "pushAD" == s[u].type ? !0 : c;
-		                c ? e(window).on("putEnlargeOver", function() {
-		                    t.ad.render(r, now_cnn)
-		                }) : t.ad.render(r, now_cnn),
-		                t.ad.setADDetailData(t.channelMap, i, a.child, l),
-		                t.infoFlow.callHandle(i, o, "ADSucc", l, i)
-		            }),
-		            e(window).on("getADListSucc", function(e, n, a, l, i) {
-		                t.infoFlow.callHandle(l, i, "ADListSucc", n, a, l)
-		            }),
-		            e(window).on("noAD", function(e, n, a, l) {
-		                t.infoFlow.callHandle(a, l, "noAD", n, a)
-		            })
-		        },
-		        enterRoute: function(n) {
-		            var a = this;
-		            e(window).on("enterChannel", function(l, i) {
-		                e(window).scrollTop(0);
-		                var o = i.firstname
-		                  , s = i.secondname
-		                  , r = o.replace("channel=", "")
-		                  , c = r !== t.infoFlow.channel;
-		                a.setTitle(t.channelMap, r);
-		                try {
-		                    neteaseTracker()
-		                } catch (l) {}
-		                t.infoFlow.channelSwiper.toChannel("channel_" + r),
-		                t.infoFlow.channelId = t.channelName[":firstname(" + o + ")"].channelId,
-		                t.infoFlow.channel = r,
-		                t.infoFlow.child = s,
-		                t.infoFlow.channelChildMap[r] = s,
-		                t.ad.setADPath(t.channelMap, r, s),
-		                t.infoFlow.callHandle(r, s, "init", r, s, c),
-		                n.toChannel(o, s);
-		                var h;
-		                if (t.ad.getADDetailData(r, s) && (h = t.ad.getADDetailData(r, s)),
-		                e(t.ad.config.top_ad_con_push).html(""),
-		                (void 0 == h || null  == h) && e(t.ad.config.top_ad_con_colums).html(""),
-		                e(t.ad.config.float_ad_con).remove(),
-		                r && ("all" == s || void 0 == s || null  == s) && void 0 != h && null  != h) {
-		                    for (var u = h.banner, d = h.bottom ? h.bottom[0] : "", m = !1, p = u.length, f = p - 1; f >= 0; f--)
-		                        t.ad.render(u[f], r),
-		                        m = "enlargeAD" == u[f].type || "pushAD" == u[f].type ? !0 : m;
-		                    m ? e(window).on("putEnlargeOver", function() {
-		                        t.ad.render(d, r)
-		                    }) : t.ad.render(d, r)
-		                }
-		            })
-		        },
-		        leaveRoute: function() {
-		            e(window).on("leaveChannel", function(e, n) {
-		                var a = n.name.match(/firstname\(((channel=)?\w+)\)/)[1]
-		                  , l = n.name.match(/secondname\((\w+)\)/) ? n.name.match(/secondname\((\w+)\)/)[1] : ""
-		                  , i = a.replace("channel=", "");
-		                t.infoFlow.callHandle(i, l, "left", i, l)
-		            })
-		        }
-		    },
-		    t.AF = n
-		})(Zepto, window.NEWAP = NEWWAP ? NEWWAP : {})
-
-		var wap = new NEWAP.AF;
-		wap.init();
-		wap.run();
-	</script>
-
 </body>
-</html>				
+<script src="js/jquery.min.js"></script>
+<!-- <script src="js/jquery-ui.min.js"></script>
+ --><script src="js/jquery.fullPage.js"></script>
+<script>
+	$(document).ready(function(){
+		$('.skill_item .skill_name').on('click',function(){
+			$(".skill_ifo").each(function(){
+				if($(this).is(":visible")){
+					$(this).slideUp(200);
+					$('.skill_item').removeClass('selected')
+				}
+			});
+			if($(this).siblings(".skill_ifo").is(":hidden")){
+				$(this).siblings(".skill_ifo").slideDown(400);
+				$(this).parent().addClass('selected')
+			}else{
+				$(this).siblings(".skill_ifo").slideUp(200);
+				$(this).parent().removeClass('selected')
+			}
+		})
+		var page = 1;
+		$('.arrow-left').on('click',function(){
+				if(!$("#exp_list").is(":animated")){
+					if(page==1){
+						$("#exp_list").animate({left:"+=50"},200,function(){
+							$(this).animate({left:"-=50"},200);
+						});
+						return false;
+					}	
+					$("#exp_list").animate({left:"+="+$("#exp_list li").width()});
+					page--;
+				}
+		});
+		$('.arrow-right').on('click',function(){
+				if(!$("#exp_list").is(":animated")){
+					if(page==3){
+						$("#exp_list").animate({left:"-=50"},200,function(){
+							$(this).animate({left:"+=50"},200);
+						});
+						return false;
+					}	
+					console.log($(".exp_list li").width());
+					$("#exp_list").animate({left:"-="+$("#exp_list li").width()});
+					page++;
+				}
+		});
+	})
+	$("#header_p").mouseover(function(){
+		$("#header_p1").html("Resume");
+		$("#header_p2").html("前端工程师");
+	}).mouseout(function(){
+		$("#header_p1").html("hobo");
+		$("#header_p2").html("个人简历");	
+	})
+	$(function(){
+	    $('#dowebok').fullpage({
+	    	scrollingSpeed: 400,
+			css3: true,
+			resize: true,
+			// anchors: ["page1","page2","page3","page4","page5","page6"],
+			verticalCentered: false,
+			navigation:true,
+			afterRender:function(){
+				$("#home_content").addClass("home_zoom").css({"display":"block"});
+				$('#home_info_box').animate({width:"800px"},700,function(){
+					$(".home_info_li").eq(0).fadeIn(450,function(){
+						$(this).next().fadeIn(450,function(){
+							$(this).next().fadeIn(450,function(){
+								$(this).next().fadeIn(450,function(){
+								});
+							});
+						});
+					});
+				});
+			},
+			afterLoad:function(anchorLink,index){
+				if(index==2){
+					$("#about_content h1").after("<div class='title_en'><h2>· About me ·</h2></div>");
+					$(".title_en").animate({width:"130px"},800,function(){
+						$(".title_en h2").slideDown(400);
+					});
+					$("#about_info").animate({width:"800px",marginTop:"0",marginBottom:"0"},700,function(){
+						$("#about_info p").eq(0).animate({top:"0"},700,function(){
+							$("#about_info p").eq(1).animate({top:"0"},700,function(){
+								$("#about_info p").eq(2).animate({top:"0"},700,function(){
+									$("#about_info p").eq(3).animate({top:"0"},700);
+								});
+							});
+						});	
+					})
+				}
+				if(index==3){
+					$("#skill_content h1").after("<div class='title_en'><h2>· skill ·</h2></div>");
+					$(".title_en").animate({width:"130px"},800,function(){
+						$(".title_en h2").slideDown(400);
+					});
+				}
+				if(index==4){
+					$("#exp_content h1").after("<div class='title_en'><h2>· experience ·</h2></div>");
+					$(".title_en").animate({width:"130px"},800,function(){
+						$(".title_en h2").slideDown(400);
+					});
+				}
+				if(index==5){
+					$("#portfolio_content h1").after("<div class='title_en'><h2>· portfolio ·</h2></div>");
+					$(".title_en").animate({width:"130px"},800,function(){
+						$(".title_en h2").slideDown(400);
+					});
+				}
+				if(index==6){
+					$("#contact_content h1").after("<div class='title_en'><h2>· contact Me ·</h2></div>");
+					$(".title_en").animate({width:"130px"},800,function(){
+						$(".title_en h2").slideDown(400);
+						$("#contact_code").typewriter();
+					});
+				}
+			},
+			onLeave:function(index , nextIndex, direction){
+				if(index==2||index==3||index==4||index==5||index==6){
+					$(".title_en").remove();	
+				}
+			}
+	    });
+	});
+
+	(function($) {
+		$.fn.typewriter = (function() {
+			var timer,str;
+			return function(){
+				if(timer){
+					return;
+				}
+				this.each(function() {
+					var $ele = $(this), progress = 0;
+					str = (str || $ele.html()).replace(/\s+/g,'');					
+					$ele.html('').show();
+					timer = setInterval(function() {
+						var current = str.substr(progress, 1);
+						if (current == '<') {
+							progress = str.indexOf('>', progress) + 1;
+						} else {
+							progress++;
+						}
+						$ele.html(str.substring(0, progress) + (progress & 1 ? '_' : ''));//奇偶判断
+						if (progress >= str.length) {
+							$ele.html(str);
+							clearInterval(timer);
+							timer =null;
+						}
+					}, 100);
+				});
+				return this;
+			}
+		}())
+	})(jQuery);
+</script>
+</html>
